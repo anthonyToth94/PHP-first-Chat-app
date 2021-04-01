@@ -1,0 +1,355 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  line-height: 2rem;
+}
+body {
+  background: black;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Alata", sans-serif;
+}
+
+/* F U L L BACKGROUND */
+.background {
+  min-height: 50vw;
+  min-height: 50vw;
+  background: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: row;
+}
+/* L E F T BOX */
+.container0,
+.containerMid {
+  min-width: 60rem;
+  max-width: 60rem; /* hogy legyen alapbol széles, ne a tartalom nyomja majd szét */
+  margin: auto;
+  padding: 10px;
+}
+
+.container0 input[type="text"],
+.container0 input[type="email"],
+.container0 input[type="password"],
+select,
+.boxMid [type="password"] {
+  color: white;
+  background-image: linear-gradient(rgb(6, 5, 7), rgb(31, 31, 41));
+  padding: 1rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  width: 80%;
+  border: none;
+  font-size: 1.8rem;
+  color: rgb(66, 198, 94);
+}
+.container0 select {
+  cursor: pointer;
+}
+#inputs {
+  display: flex;
+  width: 82%;
+}
+.box0 {
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 2rem 0.4rem black;
+  background-image: linear-gradient(rgb(53, 53, 56), rgb(34, 30, 30));
+  min-height: 40vw;
+  max-height: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type="radio"] {
+  width: 0;
+  opacity: 0;
+  margin-left:1rem;
+}
+label[for="Male"],
+label[for="Female"] {
+  background: url(img/ic_radio_button_off_128_28539.png) no-repeat;
+  background-position: 0;
+  background-size: 2rem;
+  padding-left: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+input:checked + label[for="Male"],
+input:checked + label[for="Female"] {
+  background: url(img/Tick_Mark_Circle_icon-icons.com_69145.png) no-repeat;
+  background-position: 0;
+  background-size: 2.2rem;
+  padding-left: 3rem;
+}
+
+.container0 input[type="text"],
+.container0 input[type="password"],
+.container0 input[type="email"],
+.containerMid [type="password"],
+.containerMid [type="text"],
+section {
+  padding: 1rem;
+  font-size: 2rem;
+  padding-left: 4rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid black;
+  outline: none;
+  color: rgb(66, 198, 94);
+}
+option {
+  background: rgb(27, 24, 24);
+  color: rgb(66, 198, 94);
+}
+
+/* S U B M I T */
+.bg {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  border-left: 1rem solid rgb(40, 44, 42);
+  border-top: 1rem solid rgb(79, 136, 132);
+  border-bottom: 1rem solid rgb(75, 136, 75);
+  border-right: 1rem solid rgb(56, 218, 150);
+  box-shadow: 0px 0px 1rem 0.2rem rgb(7, 224, 134);
+  cursor: pointer;
+  transition: 1.5s;
+}
+a {
+  text-decoration: none;
+}
+/*.submit {
+  padding: 5rem 2.5rem;
+  position: relative;
+  top: 36%;
+  left: -10%;
+  transition: 2s;
+  color: white;
+}*/
+
+.box0 input[type="submit"]
+{
+  padding: 4rem 2.5rem;
+  background:transparent;
+  position: relative;
+  top: -12%;
+  left: -16%;
+  transition: 2s;
+  color: white;
+  border-radius:5rem;
+  border:none;
+  cursor:pointer;
+  outline: none;
+  font-size:1.7rem;
+}
+.boxMid .bg input[type="submit"]
+{
+  padding: 4rem 2.5rem;
+  background:transparent;
+  position: relative;
+  top: -12%;
+   left: -7%;
+  transition: 2s;
+  color: white;
+  border-radius:5rem;
+  border:none;
+  cursor:pointer;
+  outline: none;
+  font-size:1.7rem;
+}
+/*  L O G I N button */
+.containerMid .bg .submit {
+  padding-left: 3rem;
+}
+
+.bg:hover {
+  transform: rotate(360deg);
+  border-top: 1rem solid rgb(125, 87, 53);
+  border-bottom: 1rem solid rgb(111, 54, 20);
+  border-right: 1rem solid rgb(196, 130, 46);
+  background: rgba(100, 39, 33, 0.6);
+  box-shadow: 0px 0px 1rem 0.2rem rgb(159, 21, 7);
+  border-left: 1rem solid rgb(45, 32, 32);
+}
+/*  M I D BOX */
+.containerMid {
+  min-width: 40rem;
+  max-width: 40rem; /* hogy legyen alapbol széles, ne a tartalom nyomja majd szét */
+  margin: auto;
+  padding: 10px;
+}
+.boxMid {
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 2rem 0.4rem black;
+  background-image: linear-gradient(rgb(53, 53, 56), rgb(34, 30, 30));
+  min-height: 40vw;
+  max-height: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.boxMid h1 {
+  margin-bottom: 3.5rem;
+}
+.boxMid input {
+  margin-bottom: 3.5rem;
+}
+
+/* R I G H T BOX */
+.container {
+  min-width: 50rem;
+  max-width: 50rem; /* hogy legyen alapbol széles, ne a tartalom nyomja majd szét */
+  margin: auto;
+  padding: 0rem;
+}
+.box {
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 2rem 0.4rem black;
+  background-image: linear-gradient(rgb(53, 53, 56), rgb(34, 30, 30));
+  min-height: 40vw;
+  max-height: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.innerBox {
+  background: rgb(17, 17, 17);
+}
+.innerBox:first-child {
+  border-radius: 2rem 2rem 0 0;
+  height: 5rem;
+  background-image: linear-gradient(rgb(218, 218, 218), rgb(224, 224, 224));
+}
+.innerBox:last-child {
+  border-radius: 0 0 2rem 2rem;
+  height: 12rem;
+  background-image: linear-gradient(rgb(224, 224, 224), rgb(59, 59, 59));
+}
+.innerBox:nth-child(2){
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 80rem;
+  max-height: 80rem;
+  overflow: auto;
+}
+/* L E F T TEXT */
+.text {
+  word-wrap: break-word;
+  padding: 1rem;
+  text-align: left;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  background-image: linear-gradient(rgb(168, 67, 36), rgb(182, 31, 31));
+  min-width: 50%;
+  max-width: 50%;
+  border-radius: 2rem;
+  margin-right: 50%;
+  margin-bottom: 1rem;
+  margin-bottom:0;
+}
+.textTime
+{
+  word-wrap: break-word;
+  text-align: left;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  min-width: 50%;
+  max-width: 50%;
+  margin-right: 50%;
+  font-size: 1.3rem
+}
+/* R I G H T TEXT */
+.text2 {
+  word-wrap: break-word;
+  padding: 1rem;
+  text-align: left;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  background-image: linear-gradient(rgb(20, 94, 72), rgb(38, 58, 71));
+  min-width: 50%;
+  max-width: 50%;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  margin-bottom:0;
+}
+.text2Time{
+  word-wrap: break-word;
+  text-align: right;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+  min-width: 50%;
+  max-width: 50%;
+  font-size: 1.3rem
+}
+/* M O B I L E FORM */
+.message{
+  /* height: 100%;
+  align-items: center; */
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3rem;
+}
+input[type="text"] {
+  color: white;
+  background-image: linear-gradient(rgb(6, 5, 7), rgb(31, 31, 41));
+  padding: 1rem;
+  border-radius: 0.4rem 0 0 0.4rem;
+  width: 80%;
+  border: none;
+  font-size: 1.8rem;
+  margin-bottom:2rem;
+}
+#send{
+  height: 4.2rem;
+  width: 5rem;
+  border: 0;
+  outline: none;
+  border-left: 0.1rem solid white;
+  border-top: 0.1rem solid rgb(0, 0, 0);
+  border-right: 0.1rem solid rgb(0, 0, 0);
+  border-bottom: 0.1rem solid rgb(14, 11, 11);
+  background-image: linear-gradient(rgb(6, 5, 7), rgb(31, 31, 41));
+  color:white;
+  cursor: pointer;
+  transition:1s;
+}
+#send:hover
+{
+  color: rgb(228, 54, 1);
+}
+#logout{
+  border: 0;
+  color: black;
+  transition: 1s;
+  cursor: pointer;
+  font-size: 2rem;
+  background: linear-gradient(rgb(218, 218, 218), rgb(224, 224, 224));
+  border-radius: 5rem;
+  padding: 0.2rem 0.7rem;
+}
+#logout:hover
+{
+  color:white;
+  background:gray;
+}
+
+.background a{
+  background: #845020;
+  padding:0.5rem;
+  border-radius:.5rem;
+  color:lightyellow;
+}
+.background a:hover{
+  color:black;
+}
+h3{
+  margin-bottom:1rem;
+}
